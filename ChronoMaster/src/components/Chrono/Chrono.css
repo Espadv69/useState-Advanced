@@ -1,0 +1,51 @@
+.chrono {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #282c34;
+  color: #61dafb;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.chrono-display {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.chrono-display span {
+  padding: 0 5px;
+}
+
+.chrono-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.chrono-controls button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.chrono-controls button:hover {
+  background-color: #21a1f1;
+  transform: scale(1.05);
+}
+
+.chrono-controls button:active {
+  transform: scale(0.95);
+}
