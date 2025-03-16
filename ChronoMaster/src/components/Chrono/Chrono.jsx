@@ -31,6 +31,14 @@ const Chrono = () => {
 
     return () => clearInterval(interval)
   }, [isActive])
+
+  // Reset the timer
+  const handleReset = () => {
+    setSeconds(0)
+    setMinutes(0)
+    setHours(0)
+    setIsActive(false)
+  }
 }
 
 export default Chrono
