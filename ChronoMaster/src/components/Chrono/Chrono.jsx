@@ -47,17 +47,17 @@ const Chrono = () => {
   }
 
   return (
-    <div className="chrono">
-      <div className="chrono-display">
+    <section className="chrono">
+      <header className="chrono-display">
         <span>{String(hours).padStart(2, '0')}</span>:
         <span>{String(minutes).padStart(2, '0')}</span>:
         <span>{String(seconds).padStart(2, '0')}</span>
-      </div>
-      <div className="chrono-controls">
+      </header>
+      <footer className="chrono-controls">
         <button onClick={handleIsActive}>{isActive ? 'Pause' : 'Start'}</button>
         <button onClick={handleReset}>Reset</button>
-      </div>
-    </div>
+      </footer>
+    </section>
   )
 }
 
