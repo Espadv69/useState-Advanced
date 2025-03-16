@@ -26,6 +26,13 @@ const Explanation = () => {
           imgUrl="/images/handleReset.png"
           imgAlt="Code snippet for reset function."
         />
+
+        <LiExplanation
+          step={4}
+          description="Create a function to handle the start and stop of the timer."
+          imgUrl="/images/handleIsActive.png"
+          imgAlt="Code snippet for start/stop function."
+        />
       </ul>
     </section>
   )
