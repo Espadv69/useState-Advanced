@@ -1,0 +1,28 @@
+{
+  "name": "usestate-advanced",
+  "version": "1.0.0",
+  "description": "A collection of five advanced projects using useState and useEffect in React.",
+  "private": true,
+  "workspaces": [
+    "ChronoMaster/",
+    "DarkModeStorage/",
+    "FormGuard/",
+    "InlineEditList/",
+    "MockAPIExplorer/"
+  ],
+  "keywords": [
+    "useState",
+    "useEffect",
+    "React",
+    "Advanced",
+    "State Management",
+    "React Hooks",
+    "JavaScript"
+  ],
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Espadv69/useState-Advanced.git"
+  },
+  "author": "Aitor"
+}
