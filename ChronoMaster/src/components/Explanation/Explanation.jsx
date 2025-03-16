@@ -33,6 +33,13 @@ const Explanation = () => {
           imgUrl="/images/handleIsActive.png"
           imgAlt="Code snippet for start/stop function."
         />
+
+        <LiExplanation
+          step={5}
+          description="Render the timer."
+          imgUrl="/images/htmlStructure.png"
+          imgAlt="Code snippet for HTML structure."
+        />
       </ul>
     </section>
   )
