@@ -19,6 +19,13 @@ const Explanation = () => {
           imgUrl="/images/timer.png"
           imgAlt="Code snippet for useEffect."
         />
+
+        <LiExplanation
+          step={3}
+          description="Create a function to reset the timer."
+          imgUrl="/images/handleReset.png"
+          imgAlt="Code snippet for reset function."
+        />
       </ul>
     </section>
   )
