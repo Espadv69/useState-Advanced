@@ -12,6 +12,13 @@ const Explanation = () => {
           imgUrl="/images/initHooks.png"
           imgAlt="Code snippet for initial states."
         />
+
+        <LiExplanation
+          step={2}
+          description="Create useEffect to update the timer."
+          imgUrl="/images/timer.png"
+          imgAlt="Code snippet for useEffect."
+        />
       </ul>
     </section>
   )
