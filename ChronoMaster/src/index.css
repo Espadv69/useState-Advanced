@@ -1,0 +1,19 @@
+:root {
+  --bg: #bbbbbb;
+  --txt: #121212;
+  --font: system-ui, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--txt);
+  background-color: var(--bg);
+}
