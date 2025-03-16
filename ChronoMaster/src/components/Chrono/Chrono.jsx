@@ -41,6 +41,11 @@ const Chrono = () => {
     setHours(0)
   }
 
+  // Handle isActive state
+  const handleIsActive = () => {
+    setIsActive(!isActive)
+  }
+
   return (
     <div className="chrono">
       <div className="chrono-display">
@@ -49,9 +54,7 @@ const Chrono = () => {
         <span>{String(seconds).padStart(2, '0')}</span>
       </div>
       <div className="chrono-controls">
-        <button onClick={() => setIsActive(!isActive)}>
-          {isActive ? 'Pause' : 'Start'}
-        </button>
+        <button onClick={handleIsActive}>{isActive ? 'Pause' : 'Start'}</button>
         <button onClick={handleReset}>Reset</button>
       </div>
     </div>
