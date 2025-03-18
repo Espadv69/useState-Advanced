@@ -27,6 +27,8 @@ const DarkMode = () => {
 
   return (
     <section className="dark__section">
+      <h1>{darkMode ? 'Dark Mode' : 'Light Mode'}</h1>
+      <p>Click the button to toggle dark mode</p>
       <button onClick={toggleDarkMode}>
         {darkMode ? 'Light Mode' : 'Dark Mode'}
       </button>
