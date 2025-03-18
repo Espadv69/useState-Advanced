@@ -15,6 +15,15 @@ const DarkMode = () => {
       return newMode
     })
   }
+
+  // Apply dark mode class on mount and when state changes
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add('dark-mode')
+    } else {
+      document.body.classList.remove('dark-mode')
+    }
+  }, [darkMode])
 }
 
 export default DarkMode
