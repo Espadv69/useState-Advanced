@@ -12,6 +12,13 @@ const Explanation = () => {
           imgUrl="/images/initHook.png"
           imgAlt="Code snippet to initialize darkMode state"
         />
+
+        <LiExplanation
+          step={2}
+          description="Toggle darkMode state and store the new value in localStorage"
+          imgUrl="/images/toggleMode.png"
+          imgAlt="Code snippet to toggle darkMode state"
+        />
       </ul>
     </section>
   )
