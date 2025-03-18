@@ -7,15 +7,6 @@ const DarkMode = () => {
     return localStorage.getItem('darkMode') === 'true'
   })
 
-  // Toggle dark mode
-  const toggleDarkMode = () => {
-    setDarkMode((prevMode) => {
-      const newMode = !prevMode
-      localStorage.setItem('darkMode', newMode)
-      return newMode
-    })
-  }
-
   // Apply dark mode class on mount and when state changes
   useEffect(() => {
     if (darkMode) {
@@ -24,6 +15,15 @@ const DarkMode = () => {
       document.body.classList.remove('dark-mode')
     }
   }, [darkMode])
+
+  // Toggle dark mode
+  const toggleDarkMode = () => {
+    setDarkMode((prevMode) => {
+      const newMode = !prevMode
+      localStorage.setItem('darkMode', newMode)
+      return newMode
+    })
+  }
 
   return (
     <section className="dark__section">
