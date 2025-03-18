@@ -19,6 +19,13 @@ const Explanation = () => {
           imgUrl="/images/toggleMode.png"
           imgAlt="Code snippet to toggle darkMode state"
         />
+
+        <LiExplanation
+          step={3}
+          description="Add dark mode class to the body element using useEffect"
+          imgUrl="/images/applyMode.png"
+          imgAlt="Code snippet to add dark mode class to the body element"
+        />
       </ul>
     </section>
   )
