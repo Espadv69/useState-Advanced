@@ -11,6 +11,11 @@ const DarkMode = () => {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode)
   }
+
+  // Function to set dark mode in local storage
+  const setDarkModeInStorage = () => {
+    setDarkModeStorage(!darkModeStorage)
+  }
 }
 
 export default DarkMode
