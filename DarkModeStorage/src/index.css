@@ -1,0 +1,27 @@
+/* Inter font-family */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --bg-dark: #0a0a0a;
+  --txt-dark: #fff;
+
+  --font: 'Inter', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  transition: background 0.3s ease-in-out;
+}
+
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--txt-dark);
+}
