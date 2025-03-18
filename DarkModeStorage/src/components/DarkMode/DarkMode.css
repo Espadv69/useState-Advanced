@@ -1,0 +1,35 @@
+.dark__section {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark__section h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.dark__section p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.dark__section button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff8c00;
+  color: white;
+  transition: background 0.3s ease-in-out;
+}
+
+.dark__section button:hover {
+  background-color: #e07b00;
+}
