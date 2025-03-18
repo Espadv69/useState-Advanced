@@ -29,7 +29,7 @@ const Explanation = () => {
 
         <LiExplanation
           step={4}
-          description="Renderinh HTML elements"
+          description="Rendering HTML elements"
           imgUrl="/images/htmlStructure.png"
           imgAlt="Code snippet to render HTML elements"
         />
