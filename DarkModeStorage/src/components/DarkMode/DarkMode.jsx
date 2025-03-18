@@ -24,6 +24,14 @@ const DarkMode = () => {
       document.body.classList.remove('dark-mode')
     }
   }, [darkMode])
+
+  return (
+    <section className="dark__section">
+      <button onClick={toggleDarkMode}>
+        {darkMode ? 'Light Mode' : 'Dark Mode'}
+      </button>
+    </section>
+  )
 }
 
 export default DarkMode
