@@ -18,6 +18,18 @@ const Form = () => {
       ? ''
       : 'Invalid email address.'
   }
+
+  // Function to handle changes in form inputs
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData((prev) => ({ ...prev, [name]: value }))
+
+    if (name === 'name') {
+      setError((prev) => ({ ...prev, name: validateName(value) }))
+    } else if (email === 'email') {
+      setError((prev) => ({ ...prev, email: validateEmail(value) }))
+    }
+  }
 }
 
 export default Form
