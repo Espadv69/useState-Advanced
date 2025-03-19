@@ -16,7 +16,7 @@ const Form = () => {
   const validateEmail = (email) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
       ? ''
-      : 'Invalid email address.'
+      : 'Invalid email format.'
   }
 
   // Function to handle changes in form inputs
@@ -26,7 +26,7 @@ const Form = () => {
 
     if (name === 'name') {
       setError((prev) => ({ ...prev, name: validateName(value) }))
-    } else if (email === 'email') {
+    } else if (name === 'email') {
       setError((prev) => ({ ...prev, email: validateEmail(value) }))
     }
   }
