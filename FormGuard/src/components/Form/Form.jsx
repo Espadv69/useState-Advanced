@@ -1,10 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './Form.css'
 
 const Form = () => {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [error, setError] = useState('')
+  // State to handle form inputs
+  const [formData, setFormData] = useState({ name: '', email: '' })
+  // State to handle error message
+  const [error, setError] = useState({ name: '', email: '' })
 }
 
 export default Form
