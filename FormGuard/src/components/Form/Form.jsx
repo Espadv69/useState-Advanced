@@ -11,6 +11,13 @@ const Form = () => {
   const validateName = (name) => {
     return name.length >= 3 ? '' : 'Name must be at least 3 characters.'
   }
+
+  // Function to validate email input
+  const validateEmail = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+      ? ''
+      : 'Invalid email address.'
+  }
 }
 
 export default Form
