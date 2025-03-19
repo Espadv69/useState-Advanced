@@ -33,6 +33,38 @@ const Form = () => {
 
   const isFormValid =
     !error.name && !error.email && formData.name && formData.email
+
+  return (
+    <section className="form__section">
+      <form className="form">
+        <label>
+          Name:
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+        </label>
+        {error.name && <p style={{ color: 'red' }}>{error.name}</p>}
+
+        <label>
+          Email:
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+        </label>
+        {error.email && <p style={{ color: 'red' }}>{error.email}</p>}
+
+        <button type="submit" disabled={!isFormValid}>
+          Submit
+        </button>
+      </form>
+    </section>
+  )
 }
 
 export default Form
