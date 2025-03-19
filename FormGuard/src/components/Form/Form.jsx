@@ -30,6 +30,9 @@ const Form = () => {
       setError((prev) => ({ ...prev, email: validateEmail(value) }))
     }
   }
+
+  const isFormValid =
+    !error.name && !error.email && formData.name && formData.email
 }
 
 export default Form
