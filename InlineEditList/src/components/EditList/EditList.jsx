@@ -12,6 +12,13 @@ const EditList = () => {
       setNewItem('')
     }
   }
+
+  // Function to handle editing an item in the list
+  const handleEditItem = (index, value) => {
+    const updatedItems = [...items]
+    updatedItems[index] = value
+    setItems(updatedItems)
+  }
 }
 
 export default EditList
