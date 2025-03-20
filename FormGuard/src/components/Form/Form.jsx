@@ -36,6 +36,8 @@ const Form = () => {
 
   return (
     <section className="form__section">
+      <h1>Form</h1>
+      <p>Fill out the form below:</p>
       <form className="form">
         <label>
           Name:
