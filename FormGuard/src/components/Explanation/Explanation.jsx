@@ -34,6 +34,13 @@ const Explanation = () => {
           imgUrl="/images/handleChange.png"
           imgAlt="Code snippet for handling changes in form inputs."
         />
+
+        <LiExplanation
+          step={5}
+          desc="Check if the form is valid."
+          imgUrl="/images/isFormValid.png"
+          imgAlt="Code snippet for checking if the form is valid."
+        />
       </ul>
     </section>
   )
