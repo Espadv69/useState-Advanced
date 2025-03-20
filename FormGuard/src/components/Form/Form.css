@@ -1,0 +1,90 @@
+/* Form Container */
+.form__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(120deg, #e3f2fd, #9fd4ff);
+  text-align: center;
+}
+
+/* Title and Description */
+.form__section h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form__section p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+.form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Tags */
+.form label {
+  font-weight: bold;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Inputs */
+.form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form input:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+  outline: none;
+}
+
+/* Error message */
+.form p {
+  color: red;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Button */
+.form button {
+  padding: 12px;
+  background: #2196f3;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.form button:disabled {
+  background: #b0bec5;
+  cursor: not-allowed;
+}
+
+.form button:hover:not(:disabled) {
+  background: #1976d2;
+  transform: translateY(-2px);
+}
