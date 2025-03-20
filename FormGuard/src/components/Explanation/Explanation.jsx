@@ -13,6 +13,13 @@ const Explanation = () => {
           imgUrl="/images/initHooks.png"
           imgAlt="Code snippet for initializing states."
         />
+
+        <LiExplanation
+          step={2}
+          desc="Create a function to validate the name input."
+          imgUrl="/images/validateName.png"
+          imgAlt="Code snippet for validating name input."
+        />
       </ul>
     </section>
   )
