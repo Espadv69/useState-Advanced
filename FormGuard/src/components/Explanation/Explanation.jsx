@@ -41,6 +41,13 @@ const Explanation = () => {
           imgUrl="/images/isFormValid.png"
           imgAlt="Code snippet for checking if the form is valid."
         />
+
+        <LiExplanation
+          step={6}
+          desc="Render the form and the rest of the HTML elements."
+          imgUrl="/images/htmlStructure.png"
+          imgAlt="Code snippet for rendering the form and the rest of the HTML elements."
+        />
       </ul>
     </section>
   )
