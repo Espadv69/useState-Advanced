@@ -19,6 +19,35 @@ const EditList = () => {
     updatedItems[index] = value
     setItems(updatedItems)
   }
+
+  return (
+    <section className="editList">
+      <h1>Inline Edit List</h1>
+
+      <header className="form">
+        <input
+          type="text"
+          value={newItem}
+          onChange={(e) => setNewItem(e.target.value)}
+          placeholder="Add a new item"
+        />
+        <button onClick={handleAddItem}>Add</button>
+      </header>
+
+      <ul className="ul__list">
+        {items.map((item, index) => (
+          <li key={index}>
+            <input
+              type="text"
+              value={item}
+              onChange={(e) => handleEditItem(index, e.target.value)}
+              placeholder="Edit item"
+            />
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
 }
 
 export default EditList
