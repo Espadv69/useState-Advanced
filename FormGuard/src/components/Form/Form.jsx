@@ -65,6 +65,11 @@ const Form = () => {
           Submit
         </button>
       </form>
+
+      <footer>
+        <h2>To see how the form works, go to the explanation section below.</h2>
+        <h3>⬇️</h3>
+      </footer>
     </section>
   )
 }
