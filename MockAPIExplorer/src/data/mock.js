@@ -1,4 +1,4 @@
-const MOCK = [
+export const MOCK = [
   { id: 1, name: 'Aitor Díaz', role: 'Frontend Developer' },
   { id: 2, name: 'Jon Ander', role: 'Backend Developer' },
   { id: 3, name: 'Iñigo', role: 'Fullstack Developer' },
