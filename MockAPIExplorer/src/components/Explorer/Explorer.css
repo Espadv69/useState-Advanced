@@ -1,0 +1,140 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.explorer {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+
+  animation: fadeInLeft 0.4s ease-in-out;
+}
+
+@media (prefers-color-scheme: light) {
+  .explorer {
+    background: #f0f8ff;
+    color: #222;
+  }
+
+  .explorer input {
+    background: #fff;
+    color: #222;
+    border: 2px solid #ddd;
+  }
+
+  .explorer li {
+    background: #e6f7ff;
+    color: #333;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .explorer {
+    background: #1e1e1e;
+    color: #f5f5f5;
+  }
+
+  .explorer input {
+    background: #333;
+    color: #f5f5f5;
+    border: 2px solid #555;
+  }
+
+  .explorer li {
+    background: #333;
+    color: #ddd;
+  }
+}
+
+.explorer h1 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  animation: fadeInUp 0.2s ease-in-out;
+}
+
+.explorer input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.explorer input:focus {
+  border-color: #007bff;
+}
+
+.explorer ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 10px;
+  margin-top: 20px;
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.05);
+  scrollbar-width: thin;
+  scrollbar-color: #585858 #262626;
+}
+
+.explorer ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+.explorer ul::-webkit-scrollbar-track {
+  background: #2b2b2b;
+  border-radius: 10px;
+}
+
+.explorer ul::-webkit-scrollbar-thumb {
+  background: #595959;
+  border-radius: 10px;
+}
+
+.explorer li {
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, background 0.3s;
+  animation: fadeInUp 0.2s ease-in-out both;
+}
+
+.explorer li:hover {
+  transform: scale(1.05);
+}
+
+.explorer li p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.explorer li p:first-child {
+  font-weight: bold;
+}
