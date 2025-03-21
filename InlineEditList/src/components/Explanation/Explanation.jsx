@@ -18,6 +18,13 @@ const Explanation = () => {
           imgUrl="/images/handleAddItem.png"
           imgAlt="Code snippet for the function to handle adding a new item to the list."
         />
+
+        <LiExplanation
+          step={3}
+          desc="Function to handle editing an item in the list."
+          imgUrl="/images/handleEditItem.png"
+          imgAlt="Code snippet for the function to handle editing an item in the list."
+        />
       </ul>
     </section>
   )
