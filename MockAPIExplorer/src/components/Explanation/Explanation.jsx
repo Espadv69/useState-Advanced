@@ -19,6 +19,13 @@ const Explanation = () => {
           imgUrl="/images/initHook.png"
           imgAlt="Code snippet showing the initialization of the Hook"
         />
+
+        <LiExplanation
+          step={3}
+          desc="Filter the MOCK array based on the search input"
+          imgUrl="/images/filterData.png"
+          imgAlt="Code snippet showing the filtering of the data"
+        />
       </ul>
     </section>
   )
