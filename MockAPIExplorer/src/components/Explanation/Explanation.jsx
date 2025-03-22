@@ -26,6 +26,13 @@ const Explanation = () => {
           imgUrl="/images/filterData.png"
           imgAlt="Code snippet showing the filtering of the data"
         />
+
+        <LiExplanation
+          step={4}
+          desc="Render the filtered data and the rest of the structure"
+          imgUrl="/images/htmlStructure.png"
+          imgAlt="Code snippet showing the rendering of the data and the structure"
+        />
       </ul>
     </section>
   )
